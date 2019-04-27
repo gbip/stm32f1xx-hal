@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Implement `core::fmt::Write` for `serial::Tx`
 - Add methods `stop`, `release` and `clear_update_interrupt_flag` to `Timer` (`clear_update_interrupt_flag` does not apply to `Timer<SYST>`)
 - Add timer interrupt example using RTFM
+- Fix gpio misconfiguration when using a timer in pwm input mode. Now the gpio has to be configured in floating input mode.
 
 ### Changed
 
